@@ -1,0 +1,24 @@
+on: push
+name: 🚀 Deploy conferenceineurope.org
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      id: ftp-deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: 203.161.60.27
+        username: ${{ secrets.ftp_user }}
+        password: ${{ secrets.ftp_password }}
+        server-dir: /public_html/
+        local-dir : ./conferenceineurope.org/
+    
+    - name: Debug
+      run: |
+        echo "Result: ${{ steps.ftp-deploy.outputs.result }}"
+        echo "Debug Log: ${{ steps.ftp-deploy.outputs.debug }}"
