@@ -1,0 +1,240 @@
+<section class="contry-sec">
+
+<div class="container">
+
+
+
+<div class="conf-title-sec text-center mbt40">
+
+<div class="conf-title" style="padding-bottom:15px;">Upcoming International Conference in Europe 2023 and 2024</div>
+
+<p style=" width: 89%; margin: 0 auto;">Get the list of reputed international conferences in Europe. Conferences on the subject of Science, Health care, Medicine, Engineering, Technology, Environment and Social science. <a href="https://www.conferenceineurope.org/about.php" style="color:#297DE1;">view more...</a>
+
+</p>
+
+<div class="col-md-12 size-manag-img">
+
+	<?php
+
+        
+
+        if($pp=="index.php")
+
+        { 
+
+            $k=0;					
+
+         $sql_new_ev="SELECT * FROM `ad_image` WHERE `ad_type`='Top' and (`country` ='0' || `country` ='' ||`country` IS NULL )   ORDER BY `id`  DESC limit 0,4";
+
+            $link_new_ev=mysqli_query($link,$sql_new_ev);
+
+            while($new_ev_data=mysqli_fetch_array($link_new_ev))
+
+            {
+
+            if($k==4)echo "<br>";
+
+            $k=$k+1;                                
+
+      
+
+    ?>
+
+    <div class="col-md-3 manage-bor">
+
+    <a href="<?php echo $new_ev_data['url']; ?>" target="_blank">
+
+    <img src="<?php echo $base_url; ?>ad/<?php echo  $new_ev_data['image']; ?>" alt="images" class="img-responsive" >
+
+    </a>
+
+    </div>
+
+    <?php
+
+			}
+
+}
+
+	?>
+
+    
+
+</div>
+
+<div class="conf-title" style="padding-bottom:15px;">Feature Events</div>
+
+<div class="col-md-12 size-manag-img">
+
+
+
+<?php
+
+			$sql_promote=mysqli_query($link,"SELECT * FROM `promote` join `event` where `promote`.`event_id`=`event`.`event_id` and `promote`.`exp_date`>= curdate()   and `promote_type` like 'HOMEFEATURED' ORDER BY `promote`.`promote_id` DESC limit 0,6");		
+
+			while($p_data=mysqli_fetch_array($sql_promote))
+
+			{
+
+			  ?>
+
+    <div class="col-md-4 manage-bor" style="display:flex; border-radius: 10px; border: solid #cfcfcf 1px; box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.18); height: 200px; margin: 5px;
+
+">
+
+    	<div class="manage-align">
+
+            <h5><strong style="color:#0F68F1"><?php   echo  date('M d Y', strtotime($p_data['event_stat'])); ?></strong></h5><br>
+
+            <p><?php echo substr($p_data['event_name'],0,50); ?> ...
+<br>
+
+            <a href="conf-detail.php?ev_id=<?php echo $p_data['event_id']; ?>&name=<?php echo $p_data['event_name']; ?>" class="black" target="_blank" style="color:#0F68F1; font-weight:bold;">View More</a>
+
+            </p>
+
+            <h5><strong style="color:#F3070B"><?php echo $p_data['city']." , ".event_country($p_data['country']); ?></strong></h5>
+
+        </div>
+
+        <img src="logo_ad/<?php echo $p_data['banner']; ?>" alt="image" style="width: 130px; height: 130px; padding-top: 25px;">
+
+        
+
+    </div>
+
+   
+
+    <?php
+
+			}
+
+		   ?>
+
+    
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="white-box ">
+
+<div class="conf-title-sec text-center mbt40">
+
+<div class="conf-title">Conferences by Countries</div>
+
+<div class="conf-subtitle">in Europe</div>
+
+</div>
+
+<div class="contry-list">
+
+<?php 
+
+$sql_reg= "SELECT DISTINCT `region` from `country` where `region` ='Europe'  ORDER BY `region`  ASC ";
+
+$reg_link=mysqli_query($link,$sql_reg);
+
+while($reg_data=mysqli_fetch_array($reg_link))
+
+{
+
+?>
+
+
+
+<h3><?php echo $region = $reg_data['region']; ?></h3>
+
+<?php
+
+$cont_link= mysqli_query($link,"SELECT * FROM `country` WHERE  `region` = '$region' ORDER BY `country` ASC");
+
+include("ul_country.php");					
+
+?>
+
+
+
+<?php } ?>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="contry-sec">
+
+<div class="container">
+
+<div class="white-box ">
+
+<div class="conf-title-sec text-center mbt40">
+
+<div class="conf-title">Conferences by Popular Cities</div>
+
+<div class="conf-subtitle">in Europe</div>
+
+</div>
+
+<div class="contry-list">
+
+<ul> 
+
+<?php
+
+$sql_place= "SELECT * FROM `place` JOIN `country` ON `place`.`country` = `country`.`id` AND `country`.`region`= 'EUROPE'
+
+";
+
+$place_link=mysqli_query($link,$sql_place);
+
+while($place_data=mysqli_fetch_array($place_link))
+
+{
+
+?>
+
+
+
+<?php
+
+extract($place_data);
+
+$fl_name=$dycontpage = sp_replace_hi($pleace_name);
+
+$dycontpage = strtolower(sp_replace_hi($pleace_name)).".php";
+
+?>
+
+
+
+<li><a href="<?php echo $dycontpage; ?>" class="confrence">
+
+<span itemprop="areaServed"><?php echo $pleace_name; ?></span></a></li>
+
+	
+
+<?php } ?>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>

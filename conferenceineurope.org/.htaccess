@@ -1,0 +1,10 @@
+<IfModule mod_expires.c>
+ ExpiresActive on
+
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www\.conferenceineurope\.org
+RewriteRule (.*) https://www.conferenceineurope.org/$1 [R=301,L]
+
+RewriteEngine on
+ErrorDocument 404 https://www.conferenceineurope.org/

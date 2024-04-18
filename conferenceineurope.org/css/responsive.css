@@ -1,0 +1,49 @@
+@media (max-width:1366px){.size-manag-img{display: flex !important;}}
+@media (max-width:1280px){}
+@media (max-width:1024px){}
+@media (max-width:991px){.login-form .forgot-txt{margin-top:0 !important;margin-bottom:13px !important;}
+.inr-right-sec{padding-right:0 !important;}
+.inr-left-sec{margin-bottom:40px;}
+.home-search .home-s-fld-sec{padding-right:0 !important;margin-bottom:10px !important;border-bottom:1px solid #222223;}
+.home-search .home-s-fld-sec:after{display:none !important;}
+.conf-topic-sec .conf-topic-txt{margin-bottom:94px !important;}
+.conf-topic-txt.conf-topic-txt2 .conf-topic-txt-list:after{right:inherit !important;left:-13px !important;border-left:inherit !important;border-right:13px solid #d90845 !important;}
+.conf-topic-sec .conf-topic-txt .conf-topic-txt-list{margin-left:85px;}
+.conf-topic-sec .conf-topic .pull-right{float:left !important;width:100%;text-align:left;}
+.conf-topic-sec .conf-topic-txt h3{text-align:left !important;margin-left:84px !important;margin-top:-35px;}
+.conf-topic-sec .conf-topic-txt .conf-topic-txt-left{padding-right:0 !important;}
+.conf-topic-sec .conf-topic-txt .conf-topic-txt-right{padding-left:0 !important;}
+.conf-topic-sec .conf-topic-txt .conf-topic-img{left:0;right:inherit !important;}
+.conf-topic-sec .conf-topic:after{left:32px !important;top:0;right:inherit !important;}
+.up-cmng-evnt .up-cmng-evnt-box{margin-bottom:40px;}
+.topheader .logo{margin-top:0 !important;}
+.topheader .sign-list{display:none;}
+.footer .footer-menu-list{float:left !important;margin-top:15px !important;}
+.home-banner{padding:137px 0 60px !important;}
+li.d-hidden{display:block !important;}
+.droopmenu-navbar a{text-decoration:none;background-color:transparent;cursor:pointer;}
+.droopmenu-toggle{display:inline-block;}
+.droopmenu-toggle{width:50px;height:40px;line-height:40px;top:-23px;}
+.droopmenu>li>a, .droopmenu>li>span{color:#4c4b4b;font-size:14px;text-align:left;}
+}
+@media (max-width:768px){}
+@media (max-width:767px){}
+@media (max-width:576px){.topheader .logo img{width:236px;}
+.newsletr-sec .newsletr-txt .news-fld{width:100% !important;}
+.newsletr-sec .newsletr-txt .news-btm{left:0 !important;width:100% !important;}
+.up-cmng-evnt .up-cmng-evnt-box{padding:23px 30px 43px !important;}
+.white-box{padding:30px !important;}
+.home-banner h1{font-size:28px !important;}
+.conf-title-sec .conf-title{font-size:18px !important;}
+.conf-title-sec .conf-subtitle{font-size:14px !important;}
+}
+@media (max-width:480px){}
+@media (max-width:360px){}
+@media only screen and (min-width:320px){.size-manag-img{display: block !important;}}
+@media screen and (min-width:1024px) and (max-width:1199px){.droopmenu>li>a, .droopmenu>li>span{font-size:16px;padding:0 0 !important;padding-right:17px !important;}
+}
+@media screen and (min-width:768px) and (max-width:991px){}
+@media screen and (min-width:577px) and (max-width:767px){}
+@media screen and (min-width:480px) and (max-width:576px){}
+@media screen and (min-width:380px) and (max-width:479px){}
+@media screen and (min-width:320px) and (max-width:379px){}

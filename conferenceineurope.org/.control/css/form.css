@@ -1,0 +1,279 @@
+/* Css For Form Field */
+.tab{
+border:1px solid #CCCCCC;
+border-radius: 10px 10px 10px 10px;
+}
+
+@font-face {
+	font-family: "Ol_Chiki_Optimum";
+	src: url(../font/Ol_Chiki_Optimum.ttf) format("truetype");
+}
+.tab_header{
+background:#0066CC;
+}
+.tab_header1{
+background:#B6DEFC;
+color:#666666;
+
+padding:3px;
+}
+.table_heading{
+
+font-size:12px;
+color:#FFFFFF;
+font-weight:bold;
+text-transform:capitalize;
+}
+.table_content{
+font-size:12px;
+color:#333333;
+font-weight:bold;
+padding-left:5px;
+}
+.tab_bg1{
+background:#FFFFFF;
+
+font-size:13px;
+color:#333333;
+}
+/*.tab_bg1:hover{
+background:#CCCCCC;
+height:30px;
+}*/
+.tab_bg2{
+background:#F0F9FF;
+
+
+font-size:13px;
+color:#333333;
+}
+/*.tab_bg2:hover{
+background:#CCCCCC;
+height:30px;
+}*/
+.table_sub_content{
+
+font-size:12px;
+color:#006666;
+font-weight:bold;
+}
+.table_separator{
+color:#003366;
+font-weight:bold;
+font-size:16px;
+}
+
+.form_text{
+border:1px solid #999999;
+background:#f5f5f5;
+height:30px;
+width:250px;
+padding-left:5px;
+border-radius:3px;
+}
+.form_list{
+border:1px solid #999999;
+background:#f5f5f5;
+height:30px;
+width:250px;
+border-radius:3px;
+}
+
+.form_list_time{
+border:1px solid #65a526;
+background:#a7e16d;
+height:20px;
+width:50px;
+}
+
+.form_textarea{
+border:1px solid #CCCCCC;
+background:#f5f5f5;
+height:100px;
+width:250px;
+padding-left:5px;
+border-radius:3px;
+}
+.form_submit{
+border:1px outset #06567E;
+background:#6AA3FF;
+height:25px;
+width:90px;
+color:#FFFFFF;
+}
+
+
+.error{
+color:#FF0000;
+font:"Times New Roman", Times, serif;
+font-weight:bold;
+}
+a.link{
+font-family:Tahoma, sans-serif, Modern;
+font-size:11px;
+color:#CC0000;
+font-size:13px;	
+text-decoration:none;
+}
+a:hover.link{
+font:Tahoma, sans-serif, Modern;
+}
+.height{
+height:10px;
+}
+.tab_image{
+border:1px solid #999999;
+padding:5px;
+}
+
+.close{
+text-decoration:none;
+color:#990000;
+
+font-weight:bold;
+font-size:13px;
+}
+.close:hover{
+color:#333333;
+}
+.imagedropshadow {
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+}
+a:hover img.imagedropshadow {
+	border: solid 1px #E98900;
+	-moz-box-shadow: 1px 1px 5px #E98900;
+	-webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+}
+.domain {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FF0000;
+	font-size: 18px;
+	font-weight: bold;
+	outline-width:thick;
+	}
+	
+.form_menu{
+
+font-weight:normal;
+font-size:13px;
+color:#333333;
+padding-left:10px;
+}	
+.form_heading{
+
+font-weight:bold;
+font-size:16px;
+color:#0066CC;
+padding-left:10px;
+}
+.in_error{
+font-family:Tahoma;
+font-size:13px;
+color:#CC0000;
+}
+.listitem{
+font:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#333333;
+}
+.list_it{
+
+color:#006699;
+font-size:13px;
+}
+
+		.success{
+		
+		font-size:20px;
+		color:#00CC33;
+		}
+		.su_msg{
+		font-family:tahoma, arial, verdana;
+		font-size:14px;
+		color:#666666;
+		}
+		.su_msg1{
+		font-family:tahoma, arial, verdana;
+		font-size:14px;
+		color:#0066CC;
+		}
+		.inv{
+		color:#CC0000;
+		
+		}
+		.valid{
+		text-decoration:none;
+		color:#0066CC;
+		font-weight:bold;
+		
+		}
+		.dt{
+		
+		font-size:11px;
+		color:#0066CC;
+		
+		}
+		.leg_hed{
+		
+		color:#0066FF;
+		border:1px solid #CC0000;
+		padding:5px;
+		border-radius: 0px 0px 10px 10px;
+		}
+		.black_overlay{
+			display: none;
+			position: fixed;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: #CCCCCC;
+			z-index:1001;
+			-moz-opacity: 0.8;
+			opacity:.80;
+			filter: alpha(opacity=80);
+			
+			
+		}
+		.white_content {
+			display: none;
+			position: fixed;			
+			top: 10%;
+			left: 30%;
+			
+			width: 750px;
+			
+			
+			padding: 5px;
+			background-color: white;
+			z-index:1002;
+			border: 5px solid #0099FF;border: 5px inset rgb(5, 0, 0); border-radius: 20px 20px 20px 20px;	
+			
+			
+		}
+	
+	
+	.even_class{
+	line-height:18px;
+	font-size:13px;
+	background:#FFFFFF;	
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	}
+	
+	.odd_class{
+	line-height:18px;
+	font-size:13px;
+	background:#EAF3FB;	
+		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+
+	}
+	
+	table {
+		
+line-height:20px;
+	font-size:12px;
+		font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+
+	}

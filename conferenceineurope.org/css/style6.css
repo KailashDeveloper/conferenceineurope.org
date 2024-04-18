@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sign-list{margin-top:22px !important;}
+.droopmenu-navbar{top:6px !important;}
+.topheader{padding: 0px 0px 10px 0px !important; background:#fff;}
+.droopmenu>li>a {color: #023d9f !important;}
+.topheader .sign-list ul li a{color: #0143a6 !important;}
+.home-search{background: #212e82 !important; padding: 10px !important;}
+.home-search .search-submit{width: 83% !important; color: #ffffff !important; background: #d22f2e !important;}
+.home-search .home-s-fld-sec:after{background: #bababb !important;}
+.home-banner h1{text-transform: none !important;}
+.droopmenu li>ul{width: 240px !important;}
+.droopmenu li ul{padding: 10px 15px !important;}
+.droopmenu li li{text-align: left !important; color: #023d9f; font-size: 14px;}
+.droopmenu li{line-height: 40px; cursor: pointer;}
+.social-mng{text-align: right; padding-top: 22px;}
+.topheader .sign-list ul li a{font-size: 13px !important;}
+.topheader .logo{width: 254px;}
+.size-manag-img{/*display:flex;*/ float:left; padding-top:30px; padding-bottom:20px;}
+.manage-bor{background: #fff; padding: 10px;}
+.manage-bor img{width: 100%;}
+.manage-bor:nth-child(2){margin:0px 10px;}
+.manage-bor:nth-child(3){margin:0px 10px 0px 0px;}
+.manage-align{text-align:left;}
+.contry-sec{padding: 40px 0 !important;}
+
+.black:hover{
+color:#2233F0;	
+}
+
+
+
