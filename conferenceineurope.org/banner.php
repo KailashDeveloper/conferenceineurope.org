@@ -47,7 +47,8 @@ error_reporting(E_ALL);
 
 				  <a href="<?php echo $new_ev_data['url']; ?>" target="_blank">
 
-                   <img src="<?php echo $base_url; ?>ad/<?php echo  $new_ev_data['image']; ?>" alt="featured conference" height='150' class="img-responsive"></a>
+                   <img src="<?php echo $base_url; ?>ad/<?php echo  $new_ev_data['image']; ?>" alt="featured conference" height='150' class="img-responsive" alt='<?php echo  $new_ev_data['alt']; ?>' alt='<?php echo  $new_ev_data['alt
+				   ']; ?>'></a>
 
 				</div>
 
@@ -107,7 +108,7 @@ error_reporting(E_ALL);
 
 				  <a href="<?php echo $new_ev_data['url']; ?>" target="_blank">
 
-                   <img src="<?php echo $base_url; ?>ad/<?php echo  $new_ev_data['image']; ?>" alt="featured conference" class="img-responsive" style="height: 130px;"></a>
+                   <img src="<?php echo $base_url; ?>ad/<?php echo  $new_ev_data['image']; ?>" alt="featured conference" class="img-responsive" style="height: 130px;" alt='<?php echo  $new_ev_data['alt']; ?>'></a>
 
 				</div>
 
