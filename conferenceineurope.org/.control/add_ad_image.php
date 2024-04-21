@@ -151,64 +151,8 @@ include("top_menu.php");
   <tr>
     <td width="15%" class="form_menu">Heading </td>
     <td width="2%">&nbsp;</td>
-    <td colspan="2">
-    
-		
-    <label>
-      <select name="heading" class="form_list" id="heading">
-    
-    <option value="CONFERENCEALERTS.IN"
- <?php if(isset($listing_domain) and $listing_domain == 'CONFERENCEALERTS.IN') echo "selected='selected'"; ?>>CONFERENCEALERTS.IN</option>
- 
- 
-   <option value="FREECONFERENCEALERTS.COM"
- <?php if(isset($listing_domain) and $listing_domain == 'FREECONFERENCEALERTS.COM') echo "selected='selected'"; ?>>FREECONFERENCEALERTS.COM</option>
-
- 
-
-
-
-<option value="CONFERENCEALERT.CO" 
-<?php if(isset($listing_domain) and $listing_domain == 'CONFERENCEALERT.CO') echo "selected='selected'"; ?> >CONFERENCEALERT.CO</option>
-
-<option value="CONFERENCEALERT.CO.IN"
- <?php if(isset($listing_domain) and $listing_domain == 'CONFERENCEALERT.CO.IN') echo "selected='selected'"; ?>>CONFERENCEALERT.CO.IN</option>
-
-<option value="CONFERENCEALERT.COM" 
-<?php if(isset($listing_domain) and $listing_domain == 'CONFERENCEALERT.COM') echo "selected='selected'"; ?>>CONFERENCEALERT.COM</option>
-
-<option value="CONFERENCEALERT.IN" 
-<?php if(isset($listing_domain) and $listing_domain == 'CONFERENCEALERT.IN') echo "selected='selected'"; ?>>CONFERENCEALERT.IN</option>
-
-<option value="CONFERENCEALERT.INFO"
- <?php if(isset($listing_domain) and $listing_domain == 'CONFERENCEALERT.INFO') echo "selected='selected'"; ?>>CONFERENCEALERT.INFO</option>
-
-<option value="CONFERENCEALERTS.INFO" 
-<?php if(isset($listing_domain) and $listing_domain == 'CONFERENCEALERTS.INFO') echo "selected='selected'"; ?>>CONFERENCEALERTS.INFO</option>
-
-<option value="CONFERENCEALERTS.NET"
- <?php if(isset($listing_domain) and $listing_domain == 'CONFERENCEALERTS.NET') echo "selected='selected'"; ?>>CONFERENCEALERTS.NET</option>
-
-<option value="CONFERENCEALERTS.ORG" 
-<?php if(isset($listing_domain) and $listing_domain == 'CONFERENCEALERTS.ORG') echo "selected='selected'"; ?>>CONFERENCEALERTS.ORG</option>
-
-<option value="CONFERENCEINEUROPE.ORG"
- <?php if(isset($listing_domain) and $listing_domain == 'CONFERENCEINEUROPE.ORG') echo "selected='selected'"; ?>>CONFERENCEINEUROPE.ORG</option>
-
-
-
-<option value="NEWCONFERENCEALERTS.COM" 
-<?php if(isset($listing_domain) and $listing_domain == 'NEWCONFERENCEALERTS.COM') echo "selected='selected'"; ?>>NEWCONFERENCEALERTS.COM</option>
-
-  <option value="ALLCONFERENCEALERTS.IN"
- <?php if(isset($listing_domain) and $listing_domain == 'ALLCONFERENCEALERTS.IN') echo "selected='selected'"; ?>>ALLCONFERENCEALERT.COM</option>
- 
-
- 
- <option value="ALLCONFERENCEALERT.COM"
- <?php if(isset($listing_domain) and $listing_domain == 'ALLCONFERENCEALERT.COM') echo "selected='selected'"; ?>>ALLCONFERENCEALERT.COM</option>
-
- </select>
+    <td colspan="2"><label>
+      <input name="heading" type="text" id="heading" class="form_text" required="required">
     </label></td>
     <td width="64%">&nbsp;</td>
   </tr>
@@ -217,6 +161,14 @@ include("top_menu.php");
     <td>&nbsp;</td>
     <td colspan="2"><label>
     <input name="url" type="text" id="url" class="form_text" required="required">
+    </label></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="form_menu">Alt Msg</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><label>
+      <input name="alt" type="text" id="alt" class="form_text" required="required" />
     </label></td>
     <td>&nbsp;</td>
   </tr>
