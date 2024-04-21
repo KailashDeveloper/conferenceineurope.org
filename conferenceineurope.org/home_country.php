@@ -86,7 +86,7 @@
 
 
 
-                                <img  src="<?php echo $base_url; ?>ad/<?php echo  $new_ev_data['image']; ?>" alt="Conference in Europe" class="img-responsive" style="height:170px; width:340px;padding-top: 10px;"></a>
+                                <img  src="<?php echo $base_url; ?>ad/<?php echo  $new_ev_data['image']; ?>" alt="<?php echo  $new_ev_data['alt']; ?>" class="img-responsive" style="height:170px; width:340px;padding-top: 10px;"></a>
 
 
 
