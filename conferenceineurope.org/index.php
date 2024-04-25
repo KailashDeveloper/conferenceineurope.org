@@ -21,7 +21,7 @@ if (!isset($_SESSION))session_start();
 </head>
 
 <body>
-<?php echo $city ?>
+
 <?php include('header.php'); ?>
 
 <?php include('home_country.php'); ?>
@@ -31,6 +31,7 @@ if (!isset($_SESSION))session_start();
 <?php include('home_conferences.php'); ?>
 
 <?php //include('//.php'); ?>
+<?php echo $city ?>
 
 <?php include('footer.php'); ?>
 
