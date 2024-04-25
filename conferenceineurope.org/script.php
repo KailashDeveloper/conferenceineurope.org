@@ -153,4 +153,3 @@ if (!empty($sql_new_ev)) {
 	gtag('config', 'G-P5YCEHE3Y4');
 </script>
 <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6291b33efaada80019c43831&product=inline-share-buttons" async="async"></script>
-<!-- add  -->
