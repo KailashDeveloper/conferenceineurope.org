@@ -74,7 +74,7 @@ if (!empty($sql_new_ev)) {
 		$sql_ev_det = mysqli_query($link, "SELECT * FROM `event` WHERE `event_id` ='$ev_id'");
 		$ev_det = mysqli_fetch_array($sql_ev_det);
 		extract($ev_det);
-		$page_title = " $event_name: Conference in Europe";
+		$page_title = " $event_name: Conference in Europe1";
 		$page_description = "$short_desc";
 		$page_keyword = "";
 	} else {
