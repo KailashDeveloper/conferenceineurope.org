@@ -1,4 +1,4 @@
-<!--<title> International Conferences in <?php echo $city; ?> <?php  echo date("Y"); ?>/<?php echo date("Y")+1; ?>: Conference in Europe </title>-->
+<title> Conferences in <?php echo $city; ?> <?php  echo date("Y"); ?> | International Conference in <?php echo $city; ?> </title>
 
 <!--<meta name="description" content="Conference alerts for upcoming international conferences in <?php echo $city; ?> in <?php  echo date("Y"); ?>/<?php echo date("Y")+1; ?>. Subscribe to Conference in Europe & get free conference alerts for academic conferences in Europe."/>-->
 
