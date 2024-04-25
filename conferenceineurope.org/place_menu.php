@@ -11,7 +11,7 @@
    <h1><?php if (isset($meta_title) and $meta_title == 1) echo $meta_title;
         else { ?>
 
-       Conferences in1 <?php echo $place; ?> <?php echo date("Y"); ?> <?php } ?> </h1>
+       Conferences in <?php echo $place; ?> <?php echo date("Y"); ?> <?php } ?> </h1>
 
 
 

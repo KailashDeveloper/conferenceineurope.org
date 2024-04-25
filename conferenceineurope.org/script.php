@@ -53,7 +53,7 @@ if (!empty($sql_new_ev)) {
 		$page_title = "Login : Conference in Europe";
 		$page_description = "Conference for upcoming academic conferences in Europe. Subscribe to Conference in Europe & get free conference for international conferences in Europe.";
 		$page_keyword = "";
-	} else if (isset($city)) {
+	} else if (isset($place)) {
 		$page_title = "Conferences in $city 2024 - International $city Conference";
 		$page_description = "Upcoming international Conferences in $city - Start by searching online for international Conferences in $city 2024. You can choose according to your way of interest from a wide range of conference topics. Subscribe to Conference in Europe & get free conference for academic conferences in Europe.";
 		$page_keyword = "Conferences in $city 2024, Upcoming Conferences in $city 2024, International Conferences in $city 2024, Conferences in $city, Academic Conferences in $city, $city Conference, Main Event $city, Upcoming $city Conference, International Academic Conferences in $city, Conferences happening in $city, $city Events, Main Event in $city, Main Conference in $city";
