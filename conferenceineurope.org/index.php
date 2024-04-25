@@ -31,7 +31,6 @@ if (!isset($_SESSION))session_start();
 <?php include('home_conferences.php'); ?>
 
 <?php //include('//.php'); ?>
-<?php echo $city ?>
 
 <?php include('footer.php'); ?>
 
